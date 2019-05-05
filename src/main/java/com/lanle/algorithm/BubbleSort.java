@@ -34,7 +34,7 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        int[] testArrays = new int[]{21,12,45,32,7};
+        int[] testArrays = new int[]{21,12,45,32,7,3};
         int[] result = BubbleSort.sort(testArrays,1);
         for (int i : result) {
             System.out.print(i+"\t");
