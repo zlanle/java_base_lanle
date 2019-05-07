@@ -3,6 +3,7 @@ package com.lanle.algorithm;
 /**
  * 冒泡排序
  * 描述：外层循环排序论询次数，内层比大小
+ * 特点：效率低，实现简单
  */
 public class BubbleSort {
 
