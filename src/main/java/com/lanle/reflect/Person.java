@@ -1,6 +1,8 @@
 package com.lanle.reflect;
 
-public class Person extends Base {
+import java.io.Serializable;
+
+public class Person extends Base implements Serializable {
 
     public static void main(String[] args) {
         Base base = new Person();
