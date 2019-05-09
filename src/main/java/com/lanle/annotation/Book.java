@@ -18,6 +18,7 @@ public class Book {
         return bookName;
     }
 
+    @LanAnnotation(remark = "JAVA软件工程")
     public void setBookName(String bookName) {
         this.bookName = bookName;
     }
@@ -44,5 +45,15 @@ public class Book {
 
     public void setVersion(Integer version) {
         this.version = version;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookName='" + bookName + '\'' +
+                ", bookAuthor='" + bookAuthor + '\'' +
+                ", bookCreateTime=" + bookCreateTime +
+                ", version=" + version +
+                '}';
     }
 }
