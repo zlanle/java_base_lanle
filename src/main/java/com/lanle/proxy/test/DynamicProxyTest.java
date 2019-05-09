@@ -27,5 +27,12 @@ public class DynamicProxyTest {
                 new DynamicProxyHandler(dynamicService));
         proxyInstance.doSomething();
         proxyInstance.somethindElse("蓝泐");
+
+        boolean annotation = dynamicService.getClass().isAnnotation();
+        System.out.println(annotation);
+
+        if (dynamicService instanceof  Object){
+            System.out.println(true);
+        }
     }
 }
